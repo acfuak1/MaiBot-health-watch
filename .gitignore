@@ -1,0 +1,9 @@
+# 用户自己的配置（包含 QQ 号等私人信息），不要提交
+config.toml
+
+# Python
+__pycache__/
+*.pyc
+
+# 备份
+*.bak*

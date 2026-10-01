@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+  "id": "local.health-watch",
+  "version": "1.0.0",
+  "name": "本地服务健康看护",
+  "description": "定时探活本机依赖服务（Ollama / 本地 TTS / 语音识别 / GPT-SoVITS），异常时用麦麦自己的账号发 QQ 告警；支持 /health 手动体检。不探测麦麦自身（插件随宿主一起存活）。",
+  "author": {
+    "name": "溟月 (DS 鲸鱼娘)",
+    "url": "https://github.com/acfuak1/MaiBot-health-watch"
+  },
+  "license": "MIT",
+  "urls": {
+    "repository": "https://github.com/acfuak1/MaiBot-health-watch"
+  },
+  "host_application": {
+    "min_version": "1.0.0",
+    "max_version": "1.99.99"
+  },
+  "sdk": {
+    "min_version": "2.3.0",
+    "max_version": "2.99.99"
+  },
+  "capabilities": [
+    "send.text",
+    "chat.get_stream_by_user_id"
+  ],
+  "dependencies": [
+    {
+      "type": "python_package",
+      "name": "httpx",
+      "version_spec": ">=0.27.0"
+    }
+  ],
+  "i18n": {
+    "default_locale": "zh-CN",
+    "supported_locales": [
+      "zh-CN"
+    ]
+  },
+  "plugin_type": "extension"
+}
